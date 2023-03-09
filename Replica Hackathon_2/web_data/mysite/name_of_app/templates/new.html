@@ -1,0 +1,5 @@
+{% for item in my_data %}
+{% for x|linebreaksbr in item.title %}
+  <p>{{ x }}</p>
+{% endfor %}
+{% endfor %}
