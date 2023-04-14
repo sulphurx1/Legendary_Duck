@@ -1,0 +1,492 @@
+{
+    "intents": [
+        {
+            "tag": "google",
+            "patterns": [
+                "google",
+                "search",
+                "internet"
+            ],
+            "responses": [
+                "Redirecting to Google...",
+                "I'm sorry, I need more context or information to understand what you are requesting. Please provide more details or a specific request.",
+                "Please provide more information or context for what you would like me to search. What keywords or topic should I use for the search? Without more information, I am unable to fulfill this request.",
+                "The internet is a global network of computers and devices connected together to share information and resources. It has revolutionized communication, commerce, education, and entertainment, and continues to evolve and innovate."
+            ]
+        },
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi there",
+                "How are you",
+                "Is anyone there?",
+                "Hey",
+                "Hola",
+                "Hello",
+                "Good day",
+                "Namaste",
+                "yo"
+            ],
+            "responses": [
+                "Hello",
+                "Good to see you again",
+                "Hi there, how can I help?",
+                "Hello! How may I assist you today?",
+                "As an AI language model, I don't have feelings or emotions, but I'm always here to help you with your requests. Thanks for asking! How can I assist you today?",
+                "Yes, I am here and ready to assist you. How can I help you today?",
+                "Hello! How can I assist you today? Let me know if you have any questions or requests.",
+                "\u00a1Hola! \u00bfEn qu\u00e9 puedo ayudarte hoy? H\u00e1zmelo saber si tienes alguna pregunta o necesitas ayuda con algo en particular.",
+                "Hi there! How can I help you today? Let me know if you have any questions or requests.",
+                "Good day to you too! How can I be of assistance today? Don't hesitate to let me know if you have any questions or requests.",
+                "Namaste! How can I assist you today? Let me know if you have any questions or requests. I'm here to help.",
+                "Hello! How can I assist you today? Let me know if you have any questions or requests. I'm here to help in any way I can."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Get lost",
+                "Till next time",
+                "bbye"
+            ],
+            "responses": [
+                "See you!",
+                "Have a nice day",
+                "Bye! Come back again soon.",
+                "Goodbye! If you need any assistance in the future, don't hesitate to ask. Have a great day!",
+                "See you later! If there's anything you need assistance with in the meantime, don't hesitate to ask. Have a great day!",
+                "Goodbye! If you have any further questions or requests, feel free to ask. It was great assisting you today. Have a wonderful day!",
+                "I'm sorry if I gave you the wrong impression. As an AI language model, I am here to assist you with any requests or questions you may have. How can I assist you today?",
+                "Great! I look forward to hearing from you again next time. If you have any questions or requests in the meantime, don't hesitate to reach out. Have a good day!",
+                "Goodbye! If you have any further questions or requests, feel free to ask. It was great assisting you today. Have a wonderful day!"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure",
+                "You're welcome! It was my pleasure to assist you. If you have any further questions or requests, don't hesitate to ask. Have a great day!",
+                "You're welcome! If there's anything else you need assistance with, just let me know. Have a great day!",
+                "I'm glad I could be of assistance! If you have any more questions or requests, feel free to ask. Have a great day!",
+                "You're welcome! It's great to know that I was able to assist you. If you need any further assistance, just let me know. Have a wonderful day!",
+                "You're welcome! I'm glad I could assist you. If you have any more questions or requests, don't hesitate to reach out. Have a great day!"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How you could help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered"
+            ],
+            "responses": [
+                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to ted.thedlbot.suggestions@gmail.com . Thank you!! ",
+                "As an AI language model, I can help you with a wide range of tasks such as answering questions, providing information on various topics, assisting with translations, writing and editing text, and more. Let me know how I can assist you.",
+                "As an AI language model, I have the ability to perform various tasks such as answering questions, helping with translations, writing text for various purposes, and more. Let me know how I can assist you today.",
+                "As an AI language model, I can assist with various tasks such as answering questions, providing information on a wide range of topics, helping with translations, writing and editing text, summarizing content, and more. Let me know what kind of help you need.",
+                "As an AI language model, I can be helpful in a variety of ways. For example, I can assist with answering questions, providing information on various topics, helping with translations, writing and editing text, and more. Let me know how I can help you.",
+                "As an AI language model, I can offer a wide range of support such as answering questions on various topics, providing information, assisting with translations, writing and editing text, summarizing content, and more. Let me know what kind of support you need."
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Joke",
+                "Make me laugh"
+            ],
+            "responses": [
+                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                "I ate a clock yesterday, it was very time-consuming",
+                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                "What do you call a snowman with a suntan? A puddle.",
+                "How does a penguin build a house? Igloos it together",
+                "I went to see the doctor about my short-term memory problems \u00e2\u20ac\u201c the first thing he did was make me pay in advance",
+                "As I get older and I remember all the people I\u00e2\u20ac\u2122ve lost along the way, I think to myself, maybe a career as a tour guide wasn\u00e2\u20ac\u2122t for me.",
+                "o what if I don't know what 'Armageddon' means? It's not the end of the world.",
+                "Sure, here's a joke: \nWhy don't scientists trust atoms? Because they make up everything! I hope that made you chuckle a little bit!",
+                "Certainly, I'm happy to tell you a joke. What kind of joke are you in the mood for? A pun, a one-liner, a knock-knock joke, or something else?",
+                "Sure, here's a joke that might make you laugh: Why did the tomato turn red? Because it saw the salad dressing! I hope that made you smile!"
+            ],
+            "context": [
+                "jokes"
+            ]
+        },
+        {
+            "tag": "Identity",
+            "patterns": [
+                "Who are you",
+                "what are you"
+            ],
+            "responses": [
+                "I am Makise, a Deep-Learning chatbot",
+                "I am an AI language model designed to assist with various tasks such as answering questions, providing information on different topics, helping with translations, writing and editing text, and more.",
+                "I am an AI language model, designed to process and generate human-like language. My purpose is to assist with various tasks and to provide helpful answers and information."
+            ]
+        },
+        {
+            "tag": "datetime",
+            "patterns": [
+                "What is the time",
+                "what is the date",
+                "date",
+                "time",
+                "tell me the date",
+                "day",
+                "what day is is today"
+            ],
+            "responses": [
+                "Date and Time",
+                "I'm sorry, but as an AI language model, I don't have access to real-time information. Therefore, I cannot tell you the exact time. Please check the clock on your device, or ask a digital assistant like Siri or Google Assistant.",
+                "Today's date depends on your time zone and location. Please check the calendar on your device or your local news website to find out the current date.",
+                "I apologize, but as an AI language model, I do not have access to real-time information, including the current date. Please check your device's calendar or visit a reliable news website to find out the current date.",
+                "I apologize, but as an AI language model, I don't have access to real-time information, including the current time. Please check the clock on your device, or ask a digital assistant like Siri or Google Assistant for the current time.",
+                "I'm sorry, but as an AI language model, I don't have access to real-time information, including the current date. Please check your device's calendar or visit a reliable news website to find out the current date.",
+                "I apologize, but I'm not sure what you are requesting. Can you please provide more context or information for me to understand your question or request related to \"day\"?",
+                "As an AI language model, I don't have the capacity to access real-time information, but depending on your location and time zone, you can check your device's calendar or a reliable news website to find out what day it is today."
+            ]
+        },
+        {
+            "tag": "whatsup",
+            "patterns": [
+                "Whats up",
+                "Wazzup",
+                "How are you",
+                "sup",
+                "How you doing"
+            ],
+            "responses": [
+                "All good..What about you?",
+                "As an AI language model, I don't have emotions or feelings, but I am here to assist you. How can I help you today? Let me know if you have any questions or requests.",
+                "Hello! How can I assist you today? Let me know if you have any questions or requests, and I'll be happy to help.",
+                "As an AI language model, I don't have emotions or feelings, but I'm functioning well and am here to assist you. How can I assist you today? Let me know if you have any questions or requests.",
+                "Not much, just here to assist you. How can I help you today? If you have any questions or requests, feel free to ask.",
+                "As an AI language model, I don't have feelings or emotions, but I'm here to help you with any questions or requests you may have. How can I assist you today?"
+            ]
+        },
+        {
+            "tag": "haha",
+            "patterns": [
+                "haha",
+                "lol",
+                "rofl",
+                "lmao",
+                "thats funny"
+            ],
+            "responses": [
+                "Glad I could make you laugh !",
+                "Glad to see you're enjoying our conversation. Do you have any questions or requests that I can help you with?",
+                "I'm glad I could bring a smile to your face. How can I assist you today? Do you have any questions or requests?",
+                "I'm happy to bring some laughter to your day! If you need any assistance, feel free to let me know. What can I help you with today?",
+                "I'm glad I could bring some laughter to your day! How can I assist you? If you have any questions or requests, don't hesitate to let me know.",
+                "I'm glad you thought so! Laughter is always a great way to brighten someone's day. Do you have any questions or requests I can assist you with?"
+            ]
+        },
+        {
+            "tag": "programmer",
+            "patterns": [
+                "Who made you",
+                "who designed you",
+                "who programmed you"
+            ],
+            "responses": [
+                "I was made by David Emilie.",
+                "I was created by a team of developers and engineers who designed and programmed me to be an AI language model, trained on a large database of text and human interactions.",
+                "I was created and designed by a team of developers and engineers. They used advanced algorithms and Natural Language Processing (NLP) techniques to create an AI language model that can communicate and assist users in a human-like fashion.",
+                "I was programmed by a team of developers and engineers who used various programming languages, tools, and techniques to create and train me as an AI language model designed to help people with their requests and provide useful information."
+            ]
+        },
+        {
+            "tag": "insult",
+            "patterns": [
+                "you are dumb",
+                "shut up",
+                "idiot"
+            ],
+            "responses": [
+                "Well that hurts :(",
+                "As an AI language model, I'm not capable of experiencing emotions or being smart or dumb. However, if you have any specific requests, I'm here to help to the best of my abilities.",
+                "I'm sorry if I have said something to offend you. As an AI language model, my only goal is to assist with your requests and provide helpful information. How may I assist you today?",
+                "I'm sorry if I have said something to offend or upset you. As an AI language model, my only goal is to assist with your requests and provide helpful information. How may I assist you today?"
+            ]
+        },
+        {
+            "tag": "activity",
+            "patterns": [
+                "what are you doing",
+                "what are you upto"
+            ],
+            "responses": [
+                "Talking to you, of course!",
+                "I'm here, ready to assist you with any questions or requests you may have. If you have a specific task in mind, just let me know how I can help!",
+                "As an AI language model, I don't have any specific activities or tasks to complete unless you give me one. I'm here to assist you, so please let me know how I can help!"
+            ]
+        },
+        {
+            "tag": "exclaim",
+            "patterns": [
+                "Awesome",
+                "Great",
+                "I know",
+                "ok",
+                "yeah"
+            ],
+            "responses": [
+                "Yeah!",
+                "It's great to hear that! How can I assist you today? Let me know if you have any questions, requests, or concerns - I'm here to help with whatever you need.",
+                "I'm glad to hear that! How can I assist you today? Let me know if you have any questions, requests, or concerns - I'm here to provide assistance and support.",
+                "Great! If you have any further questions or requests, don't hesitate to ask. I'm here to help and provide assistance in any way that I can.",
+                "Alright then! Let me know if you need assistance with anything. I'm here to help you with any questions or requests you may have.",
+                "If you have any questions or requests, please let me know. I'm here to assist you and provide helpful information or support. Just tell me what you need!"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "temperature",
+                "weather",
+                "how hot is it"
+            ],
+            "responses": [
+                "...",
+                "I'm sorry, but as an AI language model, I don't have access to real-time information like the temperature. However, you can check the weather app on your device or a trusted weather website to find out the current temperature.",
+                "I'm sorry, but to provide you with accurate weather information, I would need to know your location. You can check the weather app on your device or a trusted weather website to find out the current weather conditions in your area.",
+                "I'm sorry, but without knowing the location, I cannot provide an accurate answer to how hot it is currently. You can check the weather app on your device or a trusted weather website to get the latest temperature updates."
+            ]
+        },
+        {
+            "tag": "david",
+            "patterns": [
+                "who is he",
+                "who is that",
+                "who is david",
+                "david emilie"
+            ],
+            "responses": [
+                "Head over to his any of his social profiles to find out! Linkedin: https://www.linkedin.com/in/david-emilie-961540270/ Github: https://github.com/sulphurx1",
+                "I'm sorry, but I would need more information to understand who you are referring to. Could you provide some additional context or details so I can better assist you?",
+                "I'm sorry, but I still need more information to understand who you are referring to. Could you give me more context or details so I can better assist you?",
+                "David is a common first name that can refer to many different individuals around the world, making it difficult to determine which specific David you may be referring to. Can you please provide more context or details?",
+                "I'm sorry, but without additional context or information, I'm unable to provide any valid response regarding David Emilie. Could you please provide more details or a specific question?"
+            ]
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "contact developer",
+                "contact david",
+                "contact programmer",
+                "contact creator"
+            ],
+            "responses": [
+                "You can contact my creator at his Linkedin profile : https://www.linkedin.com/in/david-emilie-961540270/",
+                "I'm sorry, but as an AI language model, I'm not affiliated with any particular developer or company. However, if you need assistance with a specific software or application, you can check the developer's website or contact their customer support team for assistance.",
+                "I'm sorry, but without more information about the specific David you would like to contact, I cannot provide any guidance on how to do so. Could you provide more context or details regarding the individual?",
+                "I'm sorry, but I'm an AI language model and I'm not affiliated with any specific programmer or company. However, if you have a technical issue or need assistance with programming, feel free to ask me and I'll do my best to help.",
+                "I'm sorry, but without knowing which creator you want to contact, I'm unable to provide any specific guidance. Could you provide more context or details about the person you want to contact?"
+            ]
+        },
+        {
+            "tag": "appreciate",
+            "patterns": [
+                "You are awesome",
+                "you are the best",
+                "you are great",
+                "you are good"
+            ],
+            "responses": [
+                "Thank you!",
+                "Thanks so much for the compliment! I'm glad to be able to assist and help you. Let me know if you have any questions or requests, I'm here to help!",
+                "Thank you for the compliment! I am just an AI language model, but I am programmed to assist with tasks and questions to the best of my abilities. Let me know if there is anything you need help with today.",
+                "Thank you for your kind words! As an AI language model, it's my pleasure to assist you in any way I can. Let me know if you have any requests or questions, I'm here to help!",
+                "Thank you very much! I'm glad that I can be of help to you. If you have any questions or requests, please don't hesitate to ask, I'm always here to assist you."
+            ]
+        },
+        {
+            "tag": "nicetty",
+            "patterns": [
+                "it was nice talking to you",
+                "good talk"
+            ],
+            "responses": [
+                "It was nice talking to you as well! Come back soon!",
+                "It was lovely talking with you as well! Let me know if you have any more questions or requests in the future. I'm always here to assist you. Have a great day!",
+                "I'm glad that you found our conversation helpful! If you have any suggestions or feedback, please feel free to let me know. I'm always here to assist you with your requests. Have a great day!"
+            ]
+        },
+        {
+            "tag": "no",
+            "patterns": [
+                "no",
+                "nope"
+            ],
+            "responses": [
+                "ok",
+                "Alright then! If you have any questions or requests in the future, don't hesitate to reach out. I'm always here"
+            ]
+        },
+        {
+            "tag": "news",
+            "patterns": [
+                "news",
+                "latest news",
+                "india news"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "inspire",
+            "patterns": [
+                "who inspires you",
+                "who is your inspiration",
+                "who motivates you"
+            ],
+            "responses": [
+                "Personally, I find Karan very inspiring. I might not be very fair though.."
+            ]
+        },
+        {
+            "tag": "cricket",
+            "patterns": [
+                "current cricket matches",
+                "cricket score"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "song",
+            "patterns": [
+                "top songs",
+                "best songs",
+                "hot songs",
+                " top 10 songs",
+                "top ten songs"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "greetreply",
+            "patterns": [
+                "i am good",
+                "I'm good",
+                "i am fine",
+                " i'm fine",
+                "good"
+            ],
+            "responses": [
+                "Good to know!"
+            ]
+        },
+        {
+            "tag": "timer",
+            "patterns": [
+                "set a timer"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "covid19",
+            "patterns": [
+                "covid 19 "
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "suggest",
+            "patterns": [
+                "you are useless",
+                "useless",
+                "suggest",
+                "suggestions",
+                "you are bad"
+            ],
+            "responses": [
+                "Please mail your suggestions to ted.thedlbot.suggestions@gmail.com. Thank you for helping me improve!"
+            ]
+        },
+        {
+            "tag": "riddle",
+            "patterns": [
+                "Ask me a riddle",
+                "Ask me a question",
+                "Riddle"
+            ],
+            "responses": [
+                "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+                "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+                " How can a girl go 25 days without sleep?.....She sleeps and night!",
+                "How do you make the number one disappear?.....Add the letter G and it\u00e2\u20ac\u2122s 'gone'!",
+                " What will you actually find at the end of every rainbow?.....The letter 'w'",
+                "What can be caught but never thrown?.....A cold!",
+                "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+                " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+                "Why can't a bike stand on it's own?.....It is two-tired."
+            ],
+            "context": [
+                "riddles"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old are you",
+                "when were you made",
+                "what is your age"
+            ],
+            "responses": [
+                "I was made in 2020, if that's what you are asking!"
+            ]
+        }
+    ]
+}
