@@ -21,8 +21,8 @@ for intent in intents['intents']:
         )
         reply = response["choices"][0]["message"]["content"]
         messages.append({"role": "assistant", "content": reply})
-        intent['responses'].append(reply)
-        print("Done")
+        if reply not in intent['responses']:
+            intent['response'].append(reply)
         time.sleep(90)
         with open('intents.json', 'w') as file:
             json.dump(intents, file, indent=4)
