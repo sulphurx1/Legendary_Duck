@@ -2,6 +2,155 @@
 #include <stdlib.h>
 #include <string.h>
 
+int chooseLanguage() {
+
+    int choice;
+
+    printf("************** Welcome to the ATM **************\n");
+    printf("1. English\n");
+    printf("2. French\n");
+    printf("3. Spanish\n");
+    printf("Please select prefered language: ");
+    scanf("%d", &choice);
+
+    return choice;
+}
+
+void displayMenu(int chooseLang) {
+    switch(chooseLang) {
+        case 1:
+            printf("************** Welcome to the ATM **************\n");
+            printf("1. Check Balance\n");
+            printf("2. Deposit\n");
+            printf("3. Withdraw\n");
+            printf("4. Transfer\n");
+            printf("5. Credit\n");
+            printf("6. Exit\n");
+            printf("Please enter your choice: ");
+
+            break;
+
+        case 2: 
+            printf("************** Bienvenue à l'ATM **************\n");
+            printf("1. Vérifier le solde\n");
+            printf("2. Déposer\n");
+            printf("3. Retirer\n");
+            printf("4. Transférer\n");
+            printf("5. Crédit\n");
+            printf("6. Sortie\n");
+            printf("Veuillez entrer votre choix: ");
+
+            break;
+
+        case 3:
+            printf("************** Bienvenido al cajero automático **************\n");
+            printf("1. Verificar saldo\n");
+            printf("2. Depositar\n");
+            printf("3. Retirar\n");
+            printf("4. Transferir\n");
+            printf("5. Crédito\n");
+            printf("6. Salida\n");
+            printf("Por favor ingrese su elección: ");
+
+            break;
+
+    }
+}
+
+void processingDisplay(int chooseLang, int j) {
+    switch(chooseLang) {
+        case 1:
+            if(j == 2) {
+                printf("Please enter the amount you want to deposit: ");
+            }
+
+            else if(j == 3) {
+                printf("Please enter the amount you want to withdraw: ");
+            }
+
+            else if(j == 4) {
+                printf("Please enter the user to transfer to: ");
+            }
+
+            else if(j == 5) {
+                printf("The amount should not be less than Rs. 50\n");
+                printf("Please enter the amount you want to credit: ");
+            }
+
+            else if(j == 6) {
+                printf("Thank you for using the ATM.\n");
+            }
+
+            break;  
+
+        case 2: 
+            if(j == 2) {
+                printf("Veuillez saisir le montant que vous souhaitez déposer: ");
+            }
+
+            else if(j == 3) {
+                printf("Veuillez saisir le montant que vous souhaitez retirer: ");
+            }
+
+            else if(j == 4) {
+                printf("Veuillez saisir le nom de l'utilisateur à transférer: ");
+            }
+
+            else if(j == 5) {
+                printf("Le montant ne doit pas être inférieur à Rs. 50\n");
+                printf("Veuillez saisir le montant que vous souhaitez créditer: ");
+            }
+
+            else if(j == 6) {
+                printf("Merci d'avoir utilisé le guichet automatique.\n");
+            }
+
+            break;
+
+        case 3:
+            if(j == 2) {
+                printf("Introduzca el importe que desea ingresar: ");
+            }
+
+            else if(j == 3) {
+                printf("Introduzca el importe que desea retirar: ");
+            }
+
+            else if(j == 4) {
+                printf("Introduzca el usuario al que desea transferir : ");
+            }
+
+            else if(j == 5) {
+                printf("El importe no debe ser inferior a Rs. 50\n");
+                printf("Por favor ingrese el monto que desea acreditar: ");
+            }
+
+            else if(j ==6) {
+                printf("Gracias por utilizar el cajero automático.\n");
+            }
+
+            break; 
+
+    }
+}
+
+void language(int chooseLang) {
+    switch(chooseLang) {
+        case 1:
+            printf("Please enter your username: ");
+            break;
+        case 2:
+            printf("S'il vous plait entrer votre nom d'utilisateur: ");
+            break;
+        case 3:
+            printf("Por favor ingrese su nombre de usuario: ");
+            break;
+        default:
+            printf("Please enter your username: ");
+            break;
+    }
+}
+
 void checkBalance(float balance) {
     printf("Your balance is Rs. %.2f\n", balance);
 }
@@ -58,10 +207,11 @@ float credit(float balance, float amount, float verification_balance) {
 int main()
 {
 
+        
     while(1) {
 
         char username[50], input[50], target_username[50], searched_username[50];
-        int pin, input_pin, i, j;
+        int pin, input_pin, i, j, chooseLang;
         float balance, amount, target_balance, verification_balance;
 
         FILE * user_data;
@@ -70,10 +220,12 @@ int main()
         user_data = fopen("user_data.txt", "r");
         temp_file = fopen("temp_file.txt", "w");
 
-        printf("************** Welcome to the ATM **************\n");
-        printf("Please enter username: ");
-        scanf("%s", &input);
+        
 
+        chooseLang = chooseLanguage();
+        language(chooseLang);
+
+        scanf("%s", &input);
 
         while(fscanf(user_data, "%s %d %f", &username, &pin, &balance) != EOF) {
             if(strcmp(input, username) == 0) {
@@ -84,33 +236,27 @@ int main()
                     scanf("%d", &input_pin);
                     if(input_pin == pin) {
                         while(1) {
-                            printf("************** Welcome to the ATM **************\n");
-                            printf("1. Check Balance\n");
-                            printf("2. Deposit\n");
-                            printf("3. Withdraw\n");
-                            printf("4. Transfer\n");
-                            printf("5. Credit\n");
-                            printf("6. Exit\n");
-                            printf("Please enter your choice: ");
-                            scanf("%d", &j);
 
+                            displayMenu(chooseLang);
+                            scanf("%d", &j);
+                            
                             switch(j) {
                                 case 1:
                                     checkBalance(balance);
                                     break;
                                 case 2:
-                                    printf("Please enter the amount you want to deposit: ");
+                                    processingDisplay(chooseLang, j);
                                     scanf("%f", &amount);
                                     balance = deposit(balance, amount);
                                     break;
                                 case 3:
-                                    printf("Please enter the amount you want to withdraw: ");
+                                    processingDisplay(chooseLang, j);
                                     scanf("%f", &amount);
                                     balance = withdraw(balance, amount);
                                     break;
 
                                 case 4:
-                                    printf("Please the user to transfer to: ");
+                                    processingDisplay(chooseLang, j);
                                     scanf("%s", &target_username);
 
                                     if(strcmp(target_username, username) == 0) {
@@ -142,8 +288,7 @@ int main()
 
                                 case 5:
 
-                                    printf("The amount should not be less than Rs. 50\n");
-                                    printf("Please enter the amount you want to credit: ");
+                                    processingDisplay(chooseLang, j);
 
                                     scanf("%f", &amount);
 
@@ -164,12 +309,12 @@ int main()
                                     }                                    
                                 
                                 case 6:
-                                    printf("Thank you for using the ATM.\n");
+                                    processingDisplay(chooseLang, j);
                                     break;
-                                default:
-                                    printf("Invalid choice.\n");
-                                    break;
+                                
                             }
+
+                            
                             if(j == 6) {
                                 break;
                             }
@@ -181,6 +326,7 @@ int main()
                         i++;
                     }
 
+                                        
                     if(j == 6) {
                         break;
                     }
